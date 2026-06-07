@@ -10,13 +10,13 @@ for anyone doing automated, browser-level QA of a conversational UI.
 
 ## How it works
 
-- `main.py` — drives the browser: sends inputs, reads bot replies, classifies
+- `main.py` - drives the browser: sends inputs, reads bot replies, classifies
   outcomes (success / wrong job title / unsupported / failure) and logs results
-- `download.py` / `extract.py` — fetch the list of positions/titles to test
+- `download.py` / `extract.py` - fetch the list of positions/titles to test
   (optionally from S3) and the latest job ads
-- `setup.py` — output/file setup
-- `clear_all.py` — reset helper
-- `settings.py` — `test_url`, sleep interval, data source toggles
+- `setup.py` - output/file setup
+- `clear_all.py` - reset helper
+- `settings.py` - `test_url`, sleep interval, data source toggles
 
 ## Setup
 
@@ -38,9 +38,9 @@ Run:
 python main.py        # results written to output.csv
 ```
 
-> The CSS/element selectors in `main.py` are specific to the original chat UI —
+> The CSS/element selectors in `main.py` are specific to the original chat UI -
 > update the `find_element*` calls to match your app's DOM.
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+MIT - see [LICENSE](LICENSE).
